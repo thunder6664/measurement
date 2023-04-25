@@ -16,7 +16,7 @@ int main()
 	Mat dst;
 	//medianBlur(src, src, 19);
 	GaussianBlur(src, dst, cv::Size(5, 5), 3, 3);
-	//cvtColor(src, src, COLOR_BGR2GRAY);
+	cvtColor(src, src, COLOR_BGR2GRAY);
 	//blur(src, src, Size(5, 5));
 	Canny(src, dst, 150, 100);
 	imwrite("C:/images/ans/gauss5_20.bmp", dst);
