@@ -1,0 +1,15 @@
+#pragma once
+#include<opencv2/opencv.hpp>
+#include<opencv2/highgui/highgui.hpp>
+#include<opencv2/imgproc/imgproc.hpp>
+//’“±ﬂÀ„◊”find_line.h
+// Ωµ‘Î
+cv::Mat	QF_blur(cv::Mat& src);
+//º∆À„Ã›∂»
+cv::Mat QF_grad(cv::Mat& src);
+void QF_LocateEdge(cv::Mat& Src /*, &dstV, pstart, pEnd, dir, thresh, flags*/);
+
+class FindLine {
+	//º∆À„ÕºœÒÃ›∂»
+
+};
