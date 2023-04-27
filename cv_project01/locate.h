@@ -23,4 +23,5 @@ void fitLineRansac(const std::vector<cv::Point2f>& points,
 // (vx, vy) 直线方向,(x0, y0)直线点集
 
 //改进的canny边缘识别算子
-void my_canny(Mat src, Mat dst);
+void cannyEdgeDetection(cv::Mat img, cv::Mat& result, int guaSize, 
+	double hightThres, double lowThres);
