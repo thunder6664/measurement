@@ -15,11 +15,8 @@ int main()
 	}
 	Mat dst;
 	//medianBlur(src, src, 19);
-	GaussianBlur(src, dst, cv::Size(5, 5), 3, 3);
-	//cvtColor(src, src, COLOR_BGR2GRAY);
-	//blur(src, src, Size(5, 5));
-	Canny(src, dst, 150, 100);
-	imwrite("C:/images/ans/gauss5_19.bmp", dst);
+	cannyEdgeDetection(src, dst, 3, 150, 100);
+	imwrite("C:/images/ans/new_canny", dst);
 
 	//QF_ShowImage(dst, "01", 0);
 	

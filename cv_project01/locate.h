@@ -4,10 +4,6 @@
 //#include <opencv2/imgproc/imgproc.hpp>
 using namespace cv;
 //’“±ﬂ
-void QF_findLine(Mat src);
-void myLocate(Mat src0, Mat dst);//÷±Ω”Ã›∂»’“±ﬂ
-
-
 void fitLineRansac(const std::vector<cv::Point2f>& points,
 	cv::Vec4f& line, int iterations, double sigma,
 	double k_min, double k_max);
